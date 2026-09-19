@@ -1,0 +1,105 @@
+<header>
+      <div
+        class="header flex flex-col md:flex-row items-center justify-between bg-black text-white p-4 md:p-6 gap-4 md:gap-0"
+      >
+        <!-- Logo Section -->
+        <div
+          class="logo flex flex-row items-center space-x-1.5 w-full md:w-auto justify-between md:justify-start"
+        >
+          <div class="flex flex-row items-center space-x-1.5">
+            <div class="bigLogo text-2xl sm:text-3xl md:text-4xl font-bold">
+              FitZone
+            </div>
+            <div
+              class="smallLogo bg-sky-50/50 px-2 py-0.5 text-xs rounded-full whitespace-nowrap"
+            >
+              Better Health
+            </div>
+          </div>
+
+          <!-- Toggle Button Mobile Only -->
+          <button
+            class="block md:hidden text-white focus:outline-none" id="menu-btn"
+           
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navbar Links -->
+        <nav id="navbar" class="navbar hidden md:flex ">
+          <ul
+            class="flex flex-row text-base lg:text-xl font-medium space-x-4 lg:space-x-7"
+          >
+            <li>
+              <a href="#" class="hover:text-gray-400 transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400 transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400 transition-colors"
+                >Our Work</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400 transition-colors"
+                >Our Team</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400 transition-colors"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Action Button -->
+        <div class="btn hidden md:flex">
+          <button
+            class="rounded-lg py-1 px-3  cursor-pointer bg-amber-50/50 text-white text-base lg:text-lg font-medium hover:bg-white hover:text-gray-900 transition-colors"
+          >
+            Get a Consultation
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navbar = document.getElementById('navbar');
+  const navbarUl = document.querySelector('#navbar ul');
+
+  menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('hidden');
+    if(!(navbar.classList.contains('hidden'))){
+      navbarUl.classList.add('flex-col');
+      navbarUl.classList.remove('flex-row');
+      navbar.classList.add('justif-start')
+    }
+    else{
+      navbarUl.classList.remove('flex-col');
+      navbarUl.classList.add('flex-row');
+      navbar.classList.remove('justif-start')
+
+    }
+    
+  });
+
+</script>

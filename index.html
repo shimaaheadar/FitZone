@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header class="bg-black w-full fixed top-0 z-20 text-white md:px-4">
+      <div
+        class="flex flex-wrap justify-between items-center px-0 py-6 md:p-6 mx-auto"
+      >
+        <!-- Logo -->
+        <div class="logo flex space-x-2">
+          <div class="big text-3xl font-bold">FitZone</div>
+
+          <div
+            class="small bg-gray-600 text-xs rounded-lg self-center px-2 py-1"
+          >
+            Better Health
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btns flex items-center space-x-3 lg:order-2">
+          <button
+            class="py-1 px-2 font-medium bg-gray-600 text-lg hidden sm:inline-flex rounded-md hover:bg-white/75 hover:text-black"
+          >
+            Get a Consultation
+          </button>
+
+          <button class="flex lg:hidden items-center text-2xl text-white">
+            <i id="navBtn" class="fa-solid fa-bars text-white"></i>
+          </button>
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="nav hidden lg:flex lg:order-1 lg:w-auto w-full">
+          <div class="container flex flex-col justify-center">
+            <ul
+              class="flex lg:flex-row lg:w-auto w-1/2 self-center flex-col border border-default rounded-xl lg:bg-transparent bg-white/30 my-4 lg:my-0 lg:border-none justify-around items-center space-x-4"
+            >
+              <li>
+                <a href="#" class="font-semibold text-lg hover:text-white/75"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-semibold text-lg hover:text-white/75"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-semibold text-lg hover:text-white/75"
+                  >Our Work</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-semibold text-lg hover:text-white/75"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-semibold text-lg hover:text-white/75"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <button
+              class="py-1 px-2 font-medium bg-gray-600 text-lg block sm:hidden rounded-md w-3/5 self-center hover:bg-white/75 hover:text-black"
+            >
+              Get a Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start sec1 -->
+    <section
+      class="sec1 flex flex-wrap justify-between items-center bg-black/95 text-white min-h-screen gap-2 pt-20 md:pt-17"
+    >
+      <div
+        class="sec11 order-2 pl-6 lg:order-1 -translate-x-full opacity-0 border-none duration-1000"
+      >
+        <!-- start part1 -->
+        <div class="part1">
+          <!-- start r1 -->
+          <div
+            class="r1 xl:text-6xl/tight lg:text-5xl/tight text-4xl/tight font-bold"
+          >
+            <span class="text-gray-600">Better</span> Health ,
+            <span class="text-gray-600">Better</span> Life <br />
+            Build <span class="text-gray-600">Your</span> Stronger
+          </div>
+          <!-- start r2 -->
+          <div
+            class="r2 xl:text-2xl/tight lg:text-xl/tight text-lg/tight text-white/75 my-4"
+          >
+            We help you achieve your fitness goals with personalized workout
+            <br />
+            programs and expert trainers.
+          </div>
+          <!-- start r3 -->
+          <div class="r3 flex items-center justify-baseline gap-6 flex-wrap">
+            <div class="icon1 flex items-center gap-2">
+              <i
+                class="fa-solid fa-check bg-gray-500 text-white rounded-full aspect-square flex items-center justify-center text-xs"
+              ></i>
+              <span>10+ Years Experience</span>
+            </div>
+
+            <div class="icon1 flex items-center gap-2">
+              <i
+                class="fa-solid fa-check bg-gray-500 text-white rounded-full aspect-square flex items-center justify-center text-xs"
+              ></i>
+              <span>+500 Clients</span>
+            </div>
+
+            <div class="icon1 flex items-center gap-2">
+              <i
+                class="fa-solid fa-check bg-gray-500 text-white rounded-full aspect-square flex items-center justify-center text-xs"
+              ></i>
+              <span>Professional Team</span>
+            </div>
+          </div>
+          <!-- start r4 -->
+          <div class="r4 gap-3 flex-wrap flex my-8">
+            <button
+              class="text-xl py-2 px-3 rounded-xl bg-gray-600 hover:bg-white/80 hover:text-black cursor-pointer"
+            >
+              Start Your Journey Now
+            </button>
+            <div
+              class="vid border rounded-xl text-xl hover:text-white/70 cursor-pointer flex items-center gap-1 px-3 py-2"
+            >
+              <i class="fa-solid fa-play"></i> Watch The Video
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end part1 -->
+      <!-- start part2 -->
+      <div
+        class="part2 relative lg:flex-1 w-full p-10 xl:p-3 order-1 lg:order-2 xl:mb-0 mb-10 translate-x-full opacity-0 border-none duration-1000"
+      >
+        <div class="img">
+          <img
+            src="images/strong-man-training-gym.jpg"
+            class="sm:w-2/5 w-full"
+            alt=""
+          />
+        </div>
+        <div
+          class="abs absolute bottom-1 left-2 sm:-left-2 md:-bottom-6 md:-left-1 xl:-bottom-9 xl:-left-7 bg-gray-700 rounded-xl shadow-2xl"
+        >
+          <div
+            class="pop flex items-center justify-center p-2 sm:p-3 gap-2 sm:gap-4 rounded-2xl text-sm sm:text-base md:text-lg max-w-44 sm:max-w-52 md:max-w-60"
+          >
+            <span>
+              Stronger <br />
+              Muscles
+            </span>
+
+            <span class="icon text-2xl sm:text-3xl md:text-4xl">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end part2 -->
+    </section>
+    <!-- end sec1 -->
+    <!-- start sec2 -->
+    <section
+      class="sec2 py-20 min-h-screen bg-gray-600 flex flex-col justify-between items-center"
+    >
+      <div
+        class="text px-4 md:px-0 flex flex-col justify-between text-white items-center space-y-3"
+      >
+        <div class="head md:text-4xl font-bold text-2xl">
+          Our Training Programs
+        </div>
+        <div class="dis lg:text-2xl md:text-xl text-sm">
+          We offer personalized fitness plans and modern equipment to help you
+          reach your ultimate goals.
+        </div>
+        <div class="line w-1/6 h-1 bg-white"></div>
+      </div>
+      <div
+        class="cards mt-8 flex flex-col lg:flex-row items-stretch justify-between gap-4 w-full px-4"
+      >
+        <!-- Card 2 -->
+        <div
+          class="card1 flex-1 min-w-0 flex flex-col bg-black hover:scale-95 hover:shadow-2xl rounded-3xl overflow-hidden"
+        >
+          <div class="img w-full">
+            <img
+              src="images/class2.jpg"
+              class="w-full aspect-4/3 object-cover"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text flex flex-col flex-1 items-start space-y-2 p-4 md:p-8 text-white"
+          >
+            <i class="fa-solid fa-people-group text-2xl text-gray-700"></i>
+
+            <div class="title text-lg md:text-2xl font-bold">
+              Group Fitness Classes
+            </div>
+
+            <div class="dis">
+              Join high-energy group workouts designed to build strength,
+              endurance, and community spirit.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div
+          class="card1 flex-1 min-w-0 flex flex-col bg-black hover:scale-95 hover:shadow-2xl rounded-3xl overflow-hidden"
+        >
+          <div class="img w-full">
+            <img
+              src="images/private.jpg"
+              class="w-full aspect-4/3 object-cover"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text flex flex-col flex-1 items-start space-y-2 p-4 md:p-8 text-white"
+          >
+            <i class="fa-solid fa-dumbbell text-2xl text-gray-700"></i>
+
+            <div class="title text-lg md:text-2xl font-bold">
+              Personal Training
+            </div>
+
+            <div class="dis">
+              Get customized workout plans tailored to your specific fitness
+              goals with 1-on-1 expert coaching.
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="card1 flex-1 min-w-0 flex flex-col bg-black hover:scale-95 hover:shadow-2xl rounded-3xl overflow-hidden"
+        >
+          <div class="img w-full">
+            <img
+              src="images/dite.jpg"
+              class="w-full aspect-4/3 object-cover"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text flex flex-col flex-1 items-start space-y-2 p-4 md:p-8 text-white"
+          >
+            <i class="fa-solid fa-apple-whole text-2xl text-gray-700"></i>
+
+            <div class="title text-lg md:text-2xl font-bold">
+              Nutrition Coaching
+            </div>
+
+            <div class="dis">
+              Fuel your body right with tailored meal plans designed by
+              certified nutrition experts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start sec3 -->
+    <section
+      id="our-work"
+      class="bg-linear-to-r from-gray-600 to-gray-800 py-20 relative overflow-hidden"
+    >
+      <div
+        class="circle1 absolute top-0 left-0 size-64 rounded-full bg-white/30 -translate-x-1/2 -translate-y-1/2"
+      ></div>
+      <div
+        class="circle2 absolute bottom-0 right-0 size-96 rounded-full bg-white/30 translate-x-1/2 translate-y-1/2"
+      ></div>
+      <!-- itms container -->
+      <div class="container">
+        <!-- start items -->
+        <div
+          class="items text-white flex flex-wrap items-center justify-around gap-9"
+        >
+          <!-- start item1 -->
+          <div class="item1">
+            <div class="num text-4xl font-bold">+500</div>
+            <div class="des text-xl text-white/70">Active Members</div>
+          </div>
+          <div class="item1">
+            <div class="num text-4xl font-bold">+1000</div>
+            <div class="des text-xl text-white/70">Training Sessions</div>
+          </div>
+          <div class="item1">
+            <div class="num text-4xl font-bold">+50</div>
+            <div class="des text-xl text-white/70">Certified Trainers</div>
+          </div>
+          <div class="item1">
+            <div class="num text-4xl font-bold">+10</div>
+            <div class="des text-xl text-white/70">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sec3 -->
+    <!-- start sec4 -->
+    <section
+      class="sec4 flex flex-col py-10 gap-10 items-center justify-around min-h-screen text-white bg-gray-600"
+    >
+      <div
+        class="text justify-self-start px-4 md:px-0 flex flex-col justify-between text-white items-center space-y-3"
+      >
+        <div class="head md:text-4xl font-bold text-2xl">Our Creative Team</div>
+        <div class="dis lg:text-2xl md:text-xl text-sm">
+          A dedicated team of certified fitness professionals committed to
+          helping you reach your goals.
+        </div>
+        <div class="line w-1/6 h-1 bg-white"></div>
+      </div>
+      <!-- start cards -->
+      <div
+        class="cards px-5 xl:flex-nowrap flex-wrap flex justify-around gap-10"
+      >
+        <!-- start card1 -->
+        <div class="card1 flex flex-col bg-black gap-5 rounded-2xl">
+          <!-- start Cardtop -->
+          <div class="top relative group">
+            <div
+              class="over-lay group-hover:flex items-center absolute hidden top-0 left-0 bg-gray-900/50 rounded-t-2xl w-full h-full"
+            >
+              <!-- start icons -->
+              <div class="icons flex items-center justify-center w-full gap-3">
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="img py-15 flex justify-around items-center bg-linear-to-tl w-full h-full rounded-t-2xl from-[#14452F] to-[#1D2E28]"
+            >
+              <i class="fa-solid fa-circle-user text-7xl"></i>
+            </div>
+          </div>
+          <!-- start Card bottom -->
+          <div class="bottom flex flex-col gap-3 p-4">
+            <div class="name text-3xl font bold">
+              Ahmed Mamdouh
+              <div class="title font-semibold text-lg text-white/70">
+                Head Fitness Coach
+              </div>
+            </div>
+            <div class="des text-xl">
+              10 years of experience in strength
+              and fitness training.
+            </div>
+          </div>
+        </div>
+        <div class="card1 flex flex-col bg-black gap-5 rounded-2xl">
+          <!-- start Cardtop -->
+          <div class="top relative group">
+            <div
+              class="over-lay group-hover:flex items-center absolute hidden top-0 left-0 bg-gray-900/50 rounded-t-2xl w-full h-full"
+            >
+              <!-- start icons -->
+              <div class="icons flex items-center justify-center w-full gap-3">
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="img py-15 flex justify-around items-center bg-linear-to-tl w-full h-full rounded-t-2xl from-[#4B011D] to-[#130007]"
+            >
+              <i class="fa-solid fa-circle-user text-7xl"></i>
+            </div>
+          </div>
+          <!-- start Card bottom -->
+          <div class="bottom flex flex-col gap-3 p-4">
+            <div class="name text-3xl font bold">
+              Sara Ahmed
+              <div class="title font-semibold text-lg text-white/70">
+                Personal Trainer
+              </div>
+            </div>
+            <div class="des text-xl">
+              Specialized in strength training and body transformation.
+            </div>
+          </div>
+        </div>
+        <div class="card1 flex flex-col bg-black gap-5 rounded-2xl">
+          <!-- start Cardtop -->
+          <div class="top relative group">
+            <div
+              class="over-lay group-hover:flex items-center absolute hidden top-0 left-0 bg-gray-900/50 rounded-t-2xl w-full h-full"
+            >
+              <!-- start icons -->
+              <div class="icons flex items-center justify-center w-full gap-3">
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="img py-15 flex justify-around items-center bg-linear-to-tl w-full h-full rounded-t-2xl from-[#003D5C] to-gray-600"
+            >
+              <i class="fa-solid fa-circle-user text-7xl"></i>
+            </div>
+          </div>
+          <!-- start Card bottom -->
+          <div class="bottom flex flex-col gap-3 p-4">
+            <div class="name text-3xl font bold">
+              Mohamed Ali
+              <div class="title font-semibold text-lg text-white/70">
+                Strength & Conditioning Coach
+              </div>
+            </div>
+            <div class="des text-xl">
+              Expert in building strength, endurance,and overall performance.
+            </div>
+          </div>
+        </div>
+        <div class="card1 flex flex-col bg-black gap-5 rounded-2xl">
+          <!-- start Cardtop -->
+          <div class="top relative group">
+            <div
+              class="over-lay group-hover:flex items-center absolute hidden top-0 left-0 bg-gray-900/50 rounded-t-2xl w-full h-full"
+            >
+              <!-- start icons -->
+              <div class="icons flex items-center justify-center w-full gap-3">
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div
+                  class="icon size-10 cursor-pointer hover:bg-gray-800 bg-white rounded-full flex justify-around items-center text-gray-800 text-2xl hover:text-white"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="img flex py-15 justify-around items-center bg-linear-to-tl w-full h-full rounded-t-2xl from-[#4F281C] to-[#34120A]"
+            >
+              <i class="fa-solid fa-circle-user text-7xl"></i>
+            </div>
+          </div>
+          <!-- start Card bottom -->
+          <div class="bottom flex flex-col gap-3 p-4">
+            <div class="name text-3xl font bold">
+              Noura Khaled
+              <div class="title font-semibold text-lg text-white/70">
+                Nutrition Coach
+              </div>
+            </div>
+
+            <div class="des text-xl">
+              Specialized in healthy nutrition and fitness meal planning.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sec4 -->
+     <!-- start foooooooterrrrrr -->
+      <footer class=" bg-black min-h-130 py-15 px-8 ">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+          <!-- start form -->
+          <div class="form bg-gray-800 rounded-2xl p-7 flex flex-col gap-5 ">
+            <h3 class="font-bold text-white text-2xl ">Contact Us</h3>
+            <form action="" class="flex flex-col justify-around flex-1 space-y-5" >
+              <div>
+                <input type="text" placeholder="Full Name" class="focus:ring-4 focus:ring-gray-700 w-full placeholder:text-white/50 focus:outline-none bg-gray-600 rounded-sm p-4">
+              </div>
+              <div>
+                <input type="text" placeholder="Email Adress" class="focus:ring-4 focus:ring-gray-700 w-full placeholder:text-white/50 focus:outline-none bg-gray-600 rounded-sm p-4">
+              </div>
+              <div>
+                <textarea name="type here" placeholder="Your Message..." id="" class="focus:ring-4 focus:ring-gray-700 w-full placeholder:text-white/50 focus:outline-none bg-gray-600 rounded-sm p-4"></textarea>
+              </div>
+  
+              <button class="w-full text-white rounded-lg font-semibold text-lg bg-gray-700 font py-3 cursor-pointer hover:bg-gray-950">Send Message</button>
+              
+            </form>
+          </div>
+          <!-- start contact -->
+           <div class="contact gap-y-5 flex flex-col justify-between text-white">
+            <h3 class="font-bold text-2xl justify-self-start">Contact Information</h3>
+
+            <div class="con1 flex items-start gap-4">
+              <div class="icon size-13 bg-gray-800 text-gray-500 flex items-center justify-around rounded-lg"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info">
+                <div class="info1 text-sm text-white/70">Adress</div>
+                <div class="info2 font-semibold text-lg">Cairo,Egypt</div>
+              </div>
+            </div>
+
+            <div class="con1 flex items-start gap-4">
+              <div class="icon size-13 bg-gray-800 text-gray-500 flex items-center justify-around rounded-lg"><i class="fa-solid fa-phone"></i></i></div>
+              <div class="info">
+                <div class="info1 text-sm text-white/70">Phone</div>
+                <div class="info2 font-semibold text-lg">+201003047625</div>
+              </div>
+            </div>
+
+            <div class="con1 flex items-start gap-4">
+              <div class="icon flex-wrap size-13 bg-gray-800 text-gray-500 flex items-center justify-around rounded-lg"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info">
+                <div class="info1 text-sm text-white/70">Email</div>
+                <div class="info2 font-semibold text-lg">FitZone168@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="map flex justify-center gap-3 py-5 items-center bg-linear-to-br from-gray-600 to-gray-900 w-full h-2/6 rounded-xl">
+              <i class="fas fa-map text-4xl opacity-50"></i>
+              <span>Site Map</span>
+            </div>
+           </div>
+        </div>
+
+         <div class="endd mt-10 pt-3 text-white/70 flex justify-between px-5 border-t-2 border-gray-700">
+          <div class="info ">© 2024 FitZone. All rights reserved.</div>
+          <div class="icons text-xl">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+         </div>
+      </footer>
+     <!-- end foooooooterrrrrr -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
